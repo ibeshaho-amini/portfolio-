@@ -1,0 +1,241 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    flex: 1;
+}
+
+.navbar-nav {
+    flex: 2;
+    text-align: center;
+}
+
+.navbar-nav .nav-link {
+    padding: 0 15px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Blue color */
+    border: none;
+    color: white;
+}
+  
+  .hero-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 15px;
+    background-color: #e9ecef;
+  }
+  
+  .text-section h3{
+    font-style: bold;
+  }
+  .text-section {
+    padding-right: 15px;
+  }
+  
+  .text-section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .text-section p {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+ /* Button Styles */
+button {
+    border: none;
+    padding: 5px;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    width: 115px;
+  }
+  
+  button:first-of-type {
+    background-color: #072c54; /* Blue color */
+    color: #fff;
+    border: 2px solid #072c54;
+    border-radius: 5px;
+  }
+  
+  button:last-of-type {
+    background-color: #fff;
+    color: #072c54; /* Blue text */
+    border: 2px solid #072c54;
+    margin-left: 40px;
+    
+  }
+  
+  button:first-of-type:hover {
+    background-color: #072c54; /* Darker blue on hover */
+  }
+  
+  button:last-of-type:hover {
+    background-color: #072c54; /* Blue background on hover */
+    color: #fff; /* White text on hover */
+  }
+  
+  
+  .image-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .projects, .blog {
+    padding: 50px 15px;
+  }
+  
+  .projects h3, .blog h3 {
+    margin-bottom: 30px;
+  }
+  
+  .image-wrapper, .image-wrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .images-container, .image-container {
+    position: relative;
+    overflow: hidden;
+    width: calc(33.333% - 10px); /* Adjust to fit 3 images per row */
+  }
+  
+  .images-container img, .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon i {
+    margin-right: 5px;
+  }
+  
+  .btn-toggle {
+    text-align: center;
+    cursor: pointer;
+    color: #007bff;
+    margin-top: 20px;
+  }
+  
+  .col-md-12 {
+    padding: 15px;
+  }
+  
+  #footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #first a {
+    color: #fff;
+    text-decoration: none;
+}
+  #footer .social-icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  #second {
+    text-align: center;
+}
+
+#second input {
+    width: 80%;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+#second button {
+    width: 80%;
+    padding: 10px;
+    background-color: #007bff; /* Blue color */
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: -7px;
+}
+  
+  @media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+    .hero-section {
+      flex-direction: column;
+    }
+  
+    .text-section, .image-section {
+      padding: 0;
+      text-align: center;
+    }
+  
+    .images-container, .image-container {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+    }
+}
