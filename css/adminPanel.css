@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    background-color: #0f1822;
     border: 1px solid #dee2e6;
     position: absolute;
     top: 20px;
@@ -15,17 +15,17 @@
 .logo {
     font-size: 2rem;
     font-weight: bold;
-    margin-right: 20px; /* Adjust the space between the logo and navigation */
+    margin-right: 20px; 
 }
 
 .logo span {
-    color: #007bff; /* Customize the color of the span */
+    color: #f857a27f; 
     font-size: 2.5rem;
 }
 
 .logo span + span {
     font-size: 1.8rem;
-    color: #495057; /* Customize the color of the dashboard text */
+    color: #495057; 
 }
 
 .nav ul {
@@ -42,12 +42,12 @@
 
 .nav ul li a {
     text-decoration: none;
-    color: #495057;
+    color: #fff;
     font-size: 1rem;
 }
 
 .nav ul li a:hover {
-    color: #007bff;
+    color: #0f1822;
 }
 
 .nav ul li a .fa {
@@ -73,9 +73,9 @@
 
 .content-section {
     width: 100%;
-    height: 100vh; /* Full viewport height */
-    background-color: #343a40; /* Dark background */
-    color: #fff; /* White text color */
+    height: 100vh;
+    background-color: #343a40;
+    color: #fff; 
     display: flex;
     justify-content: center;
     align-items: center;

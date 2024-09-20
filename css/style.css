@@ -209,6 +209,16 @@ button {
     cursor: pointer;
     margin-left: -7px;
 }
+.like-btn {
+  color: black;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.like-btn.liked {
+  color: red;
+}
+
   
   @media (max-width: 768px) {
     .navbar-nav {
